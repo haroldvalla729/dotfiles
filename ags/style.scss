@@ -1,0 +1,39 @@
+@use "styles/colors" as *;
+@use "styles/launcher";
+@use "styles/workspaces";
+@use "styles/profile";
+
+window.Bar {
+  background: transparent;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+
+  > centerbox {
+    background: transparent;
+
+    button {
+      background: none;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    button:hover {
+      background: none;
+    }
+
+    button:active,
+    button:checked {
+      background: none;
+    }
+
+    button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

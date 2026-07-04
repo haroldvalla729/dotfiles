@@ -1,0 +1,38 @@
+// widgets/launcher.scss
+@use "colors" as *;
+
+.app-launcher {
+  background: $background;
+  border-radius: 50px;
+  margin: 3px;
+
+  .launcher-trigger {
+    padding: 0;
+    min-width: 35px;
+    transition: all 0.3s ease;
+  }
+
+  .launcher-menu {
+    margin: 0px 5px 0px 0px;
+
+    .app-item {
+      padding: 0;
+      margin: 0px 3px;
+      border-radius: 8px;
+
+      .app-content {
+        border-radius: 8px;
+      }
+
+      .app-icon {
+        min-width: 25px;
+        min-height: 25px;
+      }
+
+      &:hover .app-content {
+        background: $color8;
+        backdrop-filter: blur(10px);
+      }
+    }
+  }
+}

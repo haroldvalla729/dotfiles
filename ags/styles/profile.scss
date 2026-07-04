@@ -1,0 +1,40 @@
+@use "colors" as *;
+
+.app-profiles {
+  background: $background;
+  border-radius: 50px;
+  padding: 0;
+  margin: 3px 25px;
+
+  .profile-trigger {
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    padding: 0;
+    margin: 3px 2px;
+    min-width: 35px;
+  }
+
+  popover.profiles-popover {
+    contents {
+      background: $background;
+      border: none;
+      border-radius: 12px;
+      padding: 8px;
+    }
+
+    .profiles-menu {
+      background: transparent;
+
+      .profile-option {
+        background: transparent;
+        border-radius: 50px;
+        min-width: 80px;
+        min-height: 20px;
+      }
+      :hover {
+        background: $color8;
+      }
+    }
+  }
+}
