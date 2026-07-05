@@ -3,7 +3,6 @@ import { execAsync } from "ags/process"
 import { createState, For } from "gnim"
 import { apps } from "../service/state"
 
-
 export default function AppLauncher() {
   const [showMenu, setShowMenu] = createState(false)
 
@@ -14,7 +13,7 @@ export default function AppLauncher() {
         onLeave={() => setShowMenu(false)}
       />
       <button class="launcher-trigger" halign={Gtk.Align.CENTER} valign={Gtk.Align.CENTER} >
-        <image iconName="archlinux-logo" class="arch-logo" pixelSize={20} />
+        <image iconName="arch-symbolic" pixelSize={20} />
       </button>
       <revealer
         transitionType={Gtk.RevealerTransitionType.SLIDE_LEFT}

@@ -7,19 +7,19 @@ export default function Profiles() {
     <box class="app-profiles">
         <button class="profile-trigger" halign={Gtk.Align.CENTER} valign={Gtk.Align.CENTER}
             onClicked={ () => { setShowProfiles(true) } } >
-            <image iconName="org.gnome.Settings-users-symbolic" pixelSize={16} />
+            <image iconName="user-symbolic" pixelSize={16} />
         </button>
         <popover visible={ showProfiles } onHide={ () => setShowProfiles(false) } class="profiles-popover">
             <box class="profiles-menu" orientation={Gtk.Orientation.VERTICAL} spacing={6} >
                 <button class="profile-option" onClicked={ () => { 
                     setApps(MAIN_APPS)
                     setShowProfiles(false) } } >
-                    <image iconName="org.gnome.Settings-users-symbolic" pixelSize={16} />
+                    <image iconName="funny-square-solid-symbolic" pixelSize={16} />
                 </button>
                 <button class="profile-option" onClicked={ () => { 
                     setApps(DEV_APPS)
                     setShowProfiles(false) } } >
-                    <image iconName="org.gnome.Settings-users-symbolic" pixelSize={16} />
+                    <image iconName="developer-tools-symbolic" pixelSize={16} />
                 </button>
             </box>
         </popover>

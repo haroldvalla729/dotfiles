@@ -14,7 +14,7 @@ export default function Volumen() {
         <button class="volumen-trigger" halign={Gtk.Align.CENTER} valign={Gtk.Align.CENTER}
             onClicked={ () => { execAsync("pavucontrol") 
                setShowMenu(false) } } >
-            <image iconName="audio-volume-high-rtl-symbolic" pixelSize={16} />
+            <image iconName="sound-low-solid-symbolic" pixelSize={16} />
         </button>
         <revealer
             transitionType={Gtk.RevealerTransitionType.FADE_SLIDE_LEFT}
@@ -23,7 +23,7 @@ export default function Volumen() {
         >
             <button class="volumen-option" onClicked={ () => { execAsync("pavucontrol") 
                setShowMenu(false) } } >
-                <image iconName="audio-input-microphone-symbolic" pixelSize={16} />
+                <image iconName="audio-outlined-symbolic" pixelSize={16} />
             </button>
         </revealer>
     </box>

@@ -46,7 +46,7 @@ function WorkspaceButton({ ws, hypr }: { ws: Hyprland.Workspace; hypr: Hyprland.
       overflow={Gtk.Overflow.HIDDEN} spacing={4} >
       <For each={icons}>
         {(item, index) => (
-          <image iconName={item.icon} class={index.as(i => i === 0 ? "workspace-icon" : "workspace-app-icon")} pixelSize={20} />
+          <image iconName={item.icon} class={index.as(i => i === 0 ? "workspace-icon" : "workspace-app-icon")} pixelSize={18} />
         )}
       </For>
     </box>
@@ -75,7 +75,7 @@ export default function Workspaces() {
           (
             <box class="workspace-button empty" halign={Gtk.Align.CENTER} valign={Gtk.Align.CENTER}>
               <box halign={Gtk.Align.CENTER} valign={Gtk.Align.CENTER}>
-                <image iconName={WORKSPACE_ICONS.empty} class="workspace-icon" pixelSize={20} />
+                <image iconName={WORKSPACE_ICONS.empty} class="workspace-icon" pixelSize={18} />
               </box>
             </box>
           ) : (
