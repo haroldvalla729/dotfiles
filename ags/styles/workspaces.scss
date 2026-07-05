@@ -22,6 +22,11 @@
     &.active {
       background: linear-gradient(135deg, $color1, $color4);
     }
+
+    .workspace-icon,
+    .workspace-app-icon {
+      color: $color8;
+    }
   }
 }
 
