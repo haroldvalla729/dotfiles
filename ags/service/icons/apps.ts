@@ -1,21 +1,22 @@
 export const APPS = [
   // --- Work ---
-  { icon: "kitty", name: "Kitty", command: "kitty" },
-  { icon: "org.onlyoffice.desktopeditors", name: "OnlyOffice", command: "onlyoffice" },
-  { icon: "firefox", name: "Firefox", command: "firefox" },
-  { icon: "vscode", name: "VSCode", command: "code" },
+  { icon: "terminal-symbolic", name: "Kitty", command: "kitty" },
+  { icon: "office-reader-symbolic", name: "OnlyOffice", command: "onlyoffice" },
+  { icon: "firefox-symbolic", name: "Firefox", command: "firefox" },
+  { icon: "visual-studio-symbolic", name: "VSCode", command: "code" },
+  { icon: "zen-browser-symbolic", name: "ZenBrowser", command: "app.zen_browser.zen" },
   { icon: "mousepad", name: "Mousepad", command: "mousepad" },
 
   // --- Communication ---
-  { icon: "com.discordapp.Discord", name: "Discord", command: "discord" },
-  { icon: "com.spotify.Client", name: "Spotify", command: "spotify" },
+  { icon: "baseline-discord-symbolic", name: "Discord", command: "discord" },
+  { icon: "spotify-symbolic", name: "Spotify", command: "spotify" },
   { icon: "kdeconnect", name: "KDE Connect", command: "org.kde.kdeconnect.app" },
   { icon: "qbittorrent", name: "qBittorrent", command: "org.qbittorrent.qBittorrent" },
   { icon: "ferdium", name: "Ferdium", command: "ferdium" },
 
   // --- Graphics & Visual ---
   { icon: "portal", name: "Desktop Portal", command: "xdg-desktop-portal-gtk" },
-  { icon: "folder", name: "Files", command: "thunar" },
+  { icon: "folder-with-files-broken-symbolic", name: "Files", command: "thunar" },
   { icon: "yazi", name: "Yazi", command: "yazi" },
   { icon: "imv", name: "Image Viewer", command: "imv" },
   { icon: "swappy", name: "Swappy", command: "swappy" },

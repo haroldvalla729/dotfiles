@@ -4,7 +4,7 @@ import { APPS } from "./apps";
 type AppEntry = (typeof APPS)[number];
 
 export const FALLBACK_ICON: AppEntry = {
-  icon: "kitty.svg", // pon aquí la ruta manual de tu icono genérico, definida igual que en apps.ts
+  icon: "ghost-f-symbolic", // pon aquí la ruta manual de tu icono genérico, definida igual que en apps.ts
   name: "Unknown",
   command: "",
 };

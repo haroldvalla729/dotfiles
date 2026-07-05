@@ -1,11 +1,9 @@
-export const FALLBACK_ICON = "focus-windows-symbolic";
-
 export const WORKSPACE_ICONS = {
-  active: "blueman-trust-symbolic",
-  special: "window-close-symbolic",
-  default: "window-minimize-symbolic",
-  urgent: "dialog-warning-symbolic",
-  empty: "window-restore-symbolic",
+  active: "pacman-solid-symbolic",
+  special: "fruit-cherries-symbolic",
+  default: "ghost-f-symbolic",
+  urgent: "ghost-off-symbolic",
+  empty: "circle-filled-symbolic",
 } as const;
 
 export type WorkspaceState = keyof typeof WORKSPACE_ICONS;
