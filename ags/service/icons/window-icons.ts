@@ -4,14 +4,14 @@ import { APPS } from "./apps";
 type AppEntry = (typeof APPS)[number];
 
 export const FALLBACK_ICON: AppEntry = {
-  icon: "ghost-f-symbolic", // pon aquí la ruta manual de tu icono genérico, definida igual que en apps.ts
+  icon: "ghost-f-symbolic", 
   name: "Unknown",
   command: "",
 };
 
 type HyprlandClient = { class?: string; title?: string } | null;
 
-/** Devuelve el icono (tal cual lo definiste en apps.ts) de una ventana. */
+/** Devuelve el icono de una ventana. */
 export function getIconForWindow(client: HyprlandClient): string {
   return getAppEntryForWindow(client).icon;
 }
