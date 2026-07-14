@@ -7,7 +7,7 @@ local function runOnce(cmd)
 end
 
 local startup = {
-    "awww-daemon",
+    "hyprpaper",
     "ags run",
     "mako",
     "nm-applet",
@@ -17,5 +17,4 @@ hl.on("hyprland.start", function()
     for _, app in ipairs(startup) do
         runOnce(app)
     end
-    hl.exec_cmd("$HOME/.config/hypr/scripts/wallpaper/next.sh")
 end)
