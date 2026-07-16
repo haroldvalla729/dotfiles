@@ -5,6 +5,8 @@ export const APPS = [
   { icon: "firefox-symbolic", name: "Firefox", command: "firefox" },
   { icon: "visual-studio-symbolic", name: "VSCode", command: "code" },
   { icon: "zen-browser-symbolic", name: "ZenBrowser", command: "app.zen_browser.zen" },
+  { icon: "zen-browser-symbolic", name: "Brave", command: "com.brave.Browser" },
+  { icon: "zen-browser-symbolic", name: "Opera", command: "com.opera.Opera" },
   { icon: "mousepad", name: "Mousepad", command: "mousepad" },
 
   // --- Communication ---
@@ -16,7 +18,7 @@ export const APPS = [
 
   // --- Graphics & Visual ---
   { icon: "portal", name: "Desktop Portal", command: "xdg-desktop-portal-gtk" },
-  { icon: "folder-with-files-broken-symbolic", name: "Files", command: "thunar" },
+  { icon: "folder-with-files-broken-symbolic", name: "Files", command: "dolphin" },
   { icon: "yazi", name: "Yazi", command: "yazi" },
   { icon: "imv", name: "Image Viewer", command: "imv" },
   { icon: "swappy", name: "Swappy", command: "swappy" },
@@ -54,12 +56,12 @@ function pick(...commands: string[]): AppEntry[] {
 }
 
 export const MAIN_APPS = pick(
-  "firefox",
   "kitty",
   "code",
-  "thunar",
-  "vlc",
-  "github-desktop"
+  "app.zen_browser.zen",
+  "com.brave.Browser",
+  "com.opera.Opera",
+  "dolphin"
 );
 
 export const DEV_APPS = pick( 

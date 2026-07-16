@@ -3,9 +3,9 @@ local M = {}
 M.terminal = "kitty"
 M.browser = "firefox"
 M.editor = "code"
-M.fileManager = "thunar"
+M.fileManager = "dolphin"
 
-M.menu = "rofi -show drun"
+M.menu = "com.opera.Opera"
 
 M.mod = "SUPER"
 
